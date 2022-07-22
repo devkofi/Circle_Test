@@ -34,4 +34,4 @@ workflows:
       - Intro
       - Install-Node:
           requires:
-            - Hello
+            - Intro
