@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   Intro:
     docker:
-      - image: "cimg/base"
+      - image: cimg/base
     
     steps:
       - run:
@@ -20,7 +20,7 @@ jobs:
   
   Install-Node:
     docker:
-      - image: "cimg/node:17.2"
+      - image: cimg/node:17.2
     
     steps:
       - run:
