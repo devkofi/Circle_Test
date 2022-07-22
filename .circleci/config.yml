@@ -6,8 +6,9 @@ jobs:
       - image: cimg/base
     
     steps:
+      - checkout
       - run:
-          name: "Run Something"
+          name: "List Files in Repo"
           command: |
             echo First Success
             ls -la
