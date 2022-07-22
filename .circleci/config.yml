@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   Intro:
     docker:
-      - image: cimg/base
+      - image: cimg/base:stable
     
     steps:
       - checkout
@@ -28,7 +28,7 @@ jobs:
           name: "Node Version"
           command: node -v
 
-workflow:
+workflows:
   say-hello-workflow:
     jobs:
       - Intro
